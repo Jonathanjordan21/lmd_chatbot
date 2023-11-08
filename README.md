@@ -18,7 +18,7 @@ Flowchart of "check database" process of the above flowchart :
 Flowchart of "create new ticket" process of the above flowchart : 
 ![alt_text](media/create_new_ticket.png)
 
-## Getting Started
+## Run App
 Clone the github
 ```bash
 git clone https://github.com/Jonathanjordan21/lmd_chatbot.git
