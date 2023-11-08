@@ -18,6 +18,13 @@ Flowchart of "check database" process of the above flowchart :
 Flowchart of "create new ticket" process of the above flowchart : 
 ![alt_text](media/create_new_ticket.png)
 
+## Database 
+PostgreSQL, consists of 4 tables : 
+1. users : user personal information 
+2. products : products owned of the users
+3. sales : sales of the products for each users
+4. servers : servers owned by the users
+
 ## Run App
 Clone the github
 ```bash
