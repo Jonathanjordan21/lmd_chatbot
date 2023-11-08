@@ -9,7 +9,7 @@ Json format consists of the chatbot response and the similarity scores
 ## How it works
 There are two models to build the chatbot : Zero-Shot Classfication and Instructor Embedding models<br>
 
-Below is the Flow Chart of the model's inference pipeline :
+Below are the flowcharts of the model's inference pipeline :
 ![alt text](media/flowchart1.png)
 ![alt text](media/check_database.png)
 ![alt_text](media/create_new_ticket.png)
