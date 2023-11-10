@@ -21,7 +21,7 @@ Flowchart of "create new ticket" process of the above flowchart :
 ## Database 
 PostgreSQL, consists of 4 tables : 
 1. users : user personal information 
-2. products : products owned of the users
+2. products : products owned by the users
 3. sales : sales of the products for each users
 4. servers : servers owned by the users
 
