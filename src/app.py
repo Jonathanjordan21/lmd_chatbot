@@ -86,15 +86,24 @@ def chatbot():
                 "tag_score" : float(tag['scores'][0])
             }
 
+        cur.execute(f"SELECT column_name FROM information_schema.columns WHERE table_name = '{tag['labels'][0]}';")
+        col_names = [str(x[0]) for x in cur.fetchall()]
+
         # return redirect(url_for('pred'), cust_id=cust_id, tag=tag)
         print(tag, cust_id)
         # cur.execute(f'SELECT * from {tag} where customer_id = {cust_id[-1]};')
         cur.execute(f"SELECT * from {tag['labels'][0]} where user_id = {int(cust_id['labels'][0][-2:].strip())};")
         # cur.execute("SELECT * from %s WHERE customer_id=%s", (tag, cust_id))
+        results = transform.decimal_to_float(cur.fetchall())
+        cur.close()
+        conn.close()
+
+        out = [{col_name : v for col_name,v in zip(col_names,res)} for res in results]
         return {
-            "output":transform.decimal_to_float(cur.fetchall()), 
+            "output":out, 
             "tag_score" : float(tag['scores'][0]), "user_id_score" : float(cust_id['scores'][0]), 
-            "q_score" : float(q_score)}
+            "q_score" : float(q_score)
+        }
         
 
 
