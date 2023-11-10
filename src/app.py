@@ -94,7 +94,7 @@ def chatbot():
         return {
             "output":transform.decimal_to_float(cur.fetchall()), 
             "tag_score" : float(tag['scores'][0]), "user_id_score" : float(cust_id['scores'][0]), 
-            "q_score":f"{q_score}"}
+            "q_score" : float(q_score)}
         
 
 
