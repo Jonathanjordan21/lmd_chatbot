@@ -31,6 +31,21 @@ Clone the github
 git clone https://github.com/Jonathanjordan21/lmd_chatbot.git
 ```
 
+Create a virtual environment
+```bash
+python -m venv env
+```
+
+Activate the virtual environment
+```bash
+env\Scripts\activate
+```
+
+Install the requirements
+```bash
+pip install -r requirements.txt
+```
+
 Start the flask app
 ```bash
 flask run
