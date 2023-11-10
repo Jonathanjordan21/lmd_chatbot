@@ -1,6 +1,6 @@
-fastapi
+flask
 scikit-learn
 sentencepiece
 InstructorEmbedding
 pandas
-numpy 
+numpy
