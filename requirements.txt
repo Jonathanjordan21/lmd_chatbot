@@ -2,5 +2,7 @@ flask
 scikit-learn
 sentencepiece
 InstructorEmbedding
+torch
+transformers
 pandas
 numpy
