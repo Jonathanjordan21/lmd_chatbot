@@ -33,6 +33,8 @@ def get_db_connection():
     #     database='lmd_db',
     #     port = 3306
     # )
+
+    print("Connection to database succesfull!")
     return conn
 
 
