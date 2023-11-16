@@ -3,6 +3,8 @@ scikit-learn
 torch
 transformers
 sentencepiece
+sacremoses
+sentence_transformers
 InstructorEmbedding
 pandas
 numpy
