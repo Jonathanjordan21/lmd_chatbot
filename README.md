@@ -47,6 +47,16 @@ Activate the virtual environment
 env\Scripts\activate
 ```
 
+Install torch cpu version (<200mb)
+```bash
+pip install --no-cache-dir torch==2.1.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+Install torch full version (>1GB)
+```bash
+pip install torch
+```
+
 Install the requirements
 ```bash
 pip install -r requirements.txt
@@ -58,5 +68,14 @@ cd src
 ```
 ```bash
 flask run
+```
+
+## Docker App
+Change docker_username with username in docker and app_name with the app name
+```bash
+docker build -t docker_username/app_name:latest
+```
+```bash
+docker run docker_username/app_name:latest
 ```
 
