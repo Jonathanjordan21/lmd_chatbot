@@ -1,9 +1,9 @@
 flask
 scikit-learn
-sentencepiece
-InstructorEmbedding
 torch
 transformers
+sentencepiece
+InstructorEmbedding
 pandas
 numpy
 psycopg2

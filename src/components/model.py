@@ -1,5 +1,4 @@
 from InstructorEmbedding import INSTRUCTOR
-from tensorflow import data
 from transformers import pipeline
 
 def load_emb_model():
