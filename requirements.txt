@@ -8,3 +8,4 @@ InstructorEmbedding
 pandas
 numpy
 psycopg2
+peft
